@@ -6799,13 +6799,13 @@ body {
     border-bottom: 1px solid white; }
 
 #showcase {
-  background: url("../images/main.jpeg") bottom center/cover no-repeat;
-  min-height: 750px;
+  /* background: url("../images/gallery/panto-28.jpg") bottom center/cover no-repeat; */
+  min-height: 500px;
   position: relative; }
   #showcase #header {
     z-index: 2; }
   #showcase #overlay {
-    background: rgba(0, 0, 0, 0.2);
+    /* background: rgba(0, 0, 0, 0.2); */
     position: absolute;
     top: 0;
     left: 0;

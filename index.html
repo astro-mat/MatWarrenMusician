@@ -9,11 +9,11 @@
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Questrial" rel="stylesheet">
     <link rel="stylesheet" href="css/app.css">
-    <title>Mat Warren Musician</title>
+    <title>Mat Warren Music</title>
 </head>
 <body>
 	<!-- Navbar -->
-    <nav class="navbar navbar-expand-md navbar-dark">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
         <a href="#" class="navbar-brand">
             <h3 class="mb-0">Mat Warren</h3>
         </a>
@@ -29,6 +29,9 @@
                     <a href="#icons" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
+                    <a href="#" class="nav-link" data-toggle="modal" data-target="#bookingModal">Contact</a>
+                </li>
+                <li class="nav-item">
                     <a href="#NewsEvents" class="nav-link">News & Events Feed</a>
                 </li>
 				<li class="nav-item">
@@ -37,9 +40,7 @@
                 <li class="nav-item">
                     <a href="https://astro-mat.github.io/polymat/" class="nav-link">P O L Y M A T</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link" data-toggle="modal" data-target="#bookingModal">Contact</a>
-                </li>
+
             </ul>
         </div>
     </nav>
@@ -204,6 +205,30 @@
         </div>
     </section> -->
 
+        <!-- Contact Me Section (Full Width) -->
+    <section id="contact" class="bg-dark text-light py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">CONTACT</h2>
+            <p class="text-center mb-4">Want to work together, commission a project, or ask a question? Send me a message below.</p>
+            <div class="row justify-content-center">
+            <div class="col-12 col-md-8">
+                <form action="https://formspree.io/f/xeorkebr" method="POST" class="p-4">
+                <div class="mb-3">
+                    <input type="text" name="name" class="form-control" placeholder="Your Name" required>
+                </div>
+                <div class="mb-3">
+                    <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
+                </div>
+                <div class="mb-3">
+                    <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-info w-100">Send Message</button>
+                </form>
+            </div>
+            </div>
+        </div>
+    </section>
+
     <section>
         <div class="container text-center mt-5">
             <h3>NEWS AND EVENTS FEED</h3>
@@ -249,7 +274,7 @@
         </div>
     </section> -->
 
-    <section id="newsletter" class="bg-dark">
+    <!-- <section id="newsletter" class="bg-dark">
         <div class="container text-white text-center py-5">
             <p class="lead">JOIN OUR NEWSLETTER FOR DEALS AND UPDATES AND OFFERS</p>
             <div class="row justify-content-center">
@@ -265,9 +290,9 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <section id="footer" class="p-3 bg-secondary">
+    <!-- <section id="footer" class="p-3 bg-secondary">
         <ul class="nav text-center justify-content-center flex-column flex-sm-row">
             <li class="nav-item">
                 <a href="#" class="nav-link text-white">FAQ</a>
@@ -285,52 +310,37 @@
                 <a href="" class="nav-link text-white" data-toggle="modal" data-target="#bookingModal">BOOK NOW</a>
             </li>
         </ul>
-    </section>
+    </section> -->
 
     <div class="modal" id="bookingModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
+            
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title">New Booking</h5>
+                    <h5 class="modal-title">Contact Me</h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="close">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
                 <div class="modal-body">
-                    <p>Please fill out the form below and we'll get back to you as soon as possible</p>
-                    <form>
-                        <div class="form-group">
-                            <label for="email">Email Address</label>
-                            <input type="email" class="form-control" id="email" placeholder="name@example.com">
+                    <p>Please fill out the form below and I'll get back to you as soon as possible</p>
+                    <form action="https://formspree.io/f/xeorkebr" method="POST" class="">
+                        <div class="mb-3">
+                            <input type="text" name="name" class="form-control" placeholder="Your Name" required>
                         </div>
-                        <div class="form-group">
-                            <label for="adults">Number of Adults</label>
-                            <select class="form-control" id="adults">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
+                        <div class="mb-3">
+                            <input type="email" name="_replyto" class="form-control" placeholder="Your Email" required>
                         </div>
-                        <div class="form-group">
-                            <label for="children">Number of Children</label>
-                            <select class="form-control" id="children">
-                                <option value="1">1</option>
-                                <option value="2">2</option>
-                                <option value="3">3</option>
-                                <option value="4">4</option>
-                            </select>
+                        <div class="mb-3">
+                            <textarea name="message" class="form-control" rows="4" placeholder="Your Message" required></textarea>
                         </div>
-                        <div class="form-group">
-                            <label for="requests">Additional Requests</label>
-                            <textarea id="requests" rows="3" class="form-control"></textarea>
-                        </div>
+                        <button type="submit" class="btn btn-info w-100">Send Message</button>
                     </form>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
                     <button class="btn btn-primary">Submit Request</button>
                     <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+                </div> -->
             </div>
         </div>
     </div>
