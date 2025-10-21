@@ -13,9 +13,9 @@
 </head>
 <body>
 	<!-- Navbar -->
-    <nav class="navbar sticky-top navbar-expand-md navbar-dark">
+    <nav class="navbar sticky-top navbar-expand-md navbar-dark bg-dark">
         <a href="#" class="navbar-brand">
-            <h3 class="mb-0">Mat Warren</h3>
+            <!-- <h3 class="mb-0">Mat Warren</h3> -->
         </a>
         <button class="navbar-toggler" data-toggle="collapse" data-target="#mainNavbar">
             <span class="navbar-toggler-icon"></span>
@@ -26,16 +26,16 @@
                     <a href="#showcase" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#icons" class="nav-link">About</a>
+                    <a href="#about" class="nav-link">About</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link" data-toggle="modal" data-target="#bookingModal">Contact</a>
+                    <a href="#contact" class="nav-link" data-toggle="modal" data-target="#bookingModal">Contact</a>
                 </li>
                 <li class="nav-item">
                     <a href="#NewsEvents" class="nav-link">News & Events Feed</a>
                 </li>
 				<li class="nav-item">
-                    <a href="#newsletter" class="nav-link">Releases</a>
+                    <a href="#releases" class="nav-link">Releases</a>
                 </li>
                 <li class="nav-item">
                     <a href="https://astro-mat.github.io/polymat/" class="nav-link">P O L Y M A T</a>
@@ -48,7 +48,8 @@
     <section id="showcase" class="d-flex justify-content-center align-items-center">
         <div id="overlay"></div>
         <div id="header" class="container text-white text-center">
-            <h1 class="display-1">Mat Warren</h1>
+            <!-- <h1 class="display-1">Mat Warren</h1> -->
+            <img src="./images/logo/LOGO_FINAL-01.png" alt="Mat Warren Logo" id="showcase-logo">
         </div>
     </section>
 
@@ -139,8 +140,9 @@
         </div>
     </section> -->
 
+    <!-- About section -->
     <section>
-        <div class="container mt-5">
+        <div id="about" class="container mt-5">
             <div class="row">
                 <div class="col-lg-7 mb-3">
                     <div id="mainCarousel" class="carousel slide" data-ride="carousel">
@@ -229,7 +231,7 @@
         </div>
     </section>
 
-    <section>
+    <section id="NewsEvents">
         <div class="container text-center mt-5">
             <h3>NEWS AND EVENTS FEED</h3>
             <div class="row mt-4">
@@ -312,7 +314,8 @@
         </ul>
     </section> -->
 
-    <div class="modal" id="bookingModal" tabindex="-1" role="dialog">
+    <!-- contact modal -->
+    <!-- <div class="modal" id="bookingModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             
             <div class="modal-content">
@@ -337,13 +340,9 @@
                         <button type="submit" class="btn btn-info w-100">Send Message</button>
                     </form>
                 </div>
-                <!-- <div class="modal-footer">
-                    <button class="btn btn-primary">Submit Request</button>
-                    <button class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div> -->
             </div>
         </div>
-    </div>
+    </div> -->
    
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>
