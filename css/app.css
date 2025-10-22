@@ -6806,8 +6806,16 @@ body {
 #showcase {
   padding-top: 80px;
   min-height: 200px;
-  position: relative; }
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 0;
+  overflow: hidden; }
   #showcase #header {
+    position: relative;
+    z-index: 2;
+    width: 100%;
     z-index: 2; }
   #showcase h1 {
     font-family: "Questrial", sans-serif;
@@ -6816,11 +6824,18 @@ body {
     font-size: 1.5rem;
     border-radius: 2rem; }
 
-#showcase-logo {
-  max-width: 700px;
-  /* adjust to your desired size */
+#showcase img {
+  max-width: 100%;
   height: auto;
-  /* keeps aspect ratio */ }
+  display: block;
+  margin: 0 auto;
+  /* centers it */ }
+
+#showcase-logo {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
 
 #quotes i {
   opacity: 0.3; }
@@ -6831,7 +6846,7 @@ body {
 .social-icon {
   font-size: 2.5rem;
   /* increase from 1.5rem to 2.5rem */
-  color: rgba(160, 160, 160, 0.164);
+  color: white;
   transition: color 0.3s, transform 0.3s; }
 
 #news h2 {
@@ -6881,7 +6896,7 @@ body {
     opacity: 1;
     transform: translateY(0); }
 
-.news-item {
+.video-wrapper {
   position: relative;
   display: block;
   overflow: hidden; }
@@ -6916,6 +6931,7 @@ body {
   transform: scale(1.03);
   opacity: 0.9; }
 
+/* Tablet and up */
 @media (max-width: 768px) {
   .navbar {
     background: #1f1f1f; }
@@ -6930,5 +6946,6 @@ body {
   #showcase-logo {
     max-width: 450px;
     /* shrink for mobile */ } }
+/* Desktop and up */
 
 /*# sourceMappingURL=app.css.map */
