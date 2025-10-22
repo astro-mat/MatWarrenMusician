@@ -6849,23 +6849,23 @@ body {
   color: white;
   transition: color 0.3s, transform 0.3s; }
 
-#news h2 {
+#NewsEvents h2 {
   font-family: "Questrial", sans-serif;
   font-weight: 300;
   letter-spacing: 1px; }
-#news .news-item {
+#NewsEvents .news-item {
   position: relative;
   display: block;
   overflow: hidden;
   border-radius: 0.5rem;
   cursor: pointer;
   text-decoration: none; }
-  #news .news-item img {
+  #NewsEvents .news-item img {
     width: 100%;
     height: auto;
     display: block;
     transition: transform 0.5s ease, filter 0.5s ease; }
-  #news .news-item .overlay {
+  #NewsEvents .news-item .overlay {
     position: absolute;
     inset: 0;
     background: rgba(0, 0, 0, 0);
@@ -6874,25 +6874,25 @@ body {
     justify-content: center;
     opacity: 0;
     transition: background 0.3s ease, opacity 0.3s ease; }
-  #news .news-item .overlay-text {
+  #NewsEvents .news-item .overlay-text {
     color: #fff;
     text-align: center;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.3s ease, transform 0.3s ease; }
-    #news .news-item .overlay-text h5 {
+    #NewsEvents .news-item .overlay-text h5 {
       font-weight: 600;
       margin-bottom: 0.25rem; }
-    #news .news-item .overlay-text p {
+    #NewsEvents .news-item .overlay-text p {
       font-size: 0.9rem;
       margin-bottom: 0; }
-  #news .news-item:hover img {
+  #NewsEvents .news-item:hover img {
     filter: grayscale(100%) brightness(0.6);
     transform: scale(1.05); }
-  #news .news-item:hover .overlay {
+  #NewsEvents .news-item:hover .overlay {
     background: rgba(0, 0, 0, 0.4);
     opacity: 1; }
-  #news .news-item:hover .overlay-text {
+  #NewsEvents .news-item:hover .overlay-text {
     opacity: 1;
     transform: translateY(0); }
 
@@ -6906,7 +6906,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover; }
+  object-fit: contain; }
 
 /* Keep consistent aspect ratio for video embeds */
 .video-wrapper {

@@ -103,7 +103,7 @@ body {
 
 
 // NEWS
-#news {
+#NewsEvents {
   h2 {
     font-family: "Questrial", sans-serif;
     font-weight: 300;
@@ -186,7 +186,7 @@ body {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 /* Keep consistent aspect ratio for video embeds */
