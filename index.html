@@ -126,7 +126,7 @@
     <section id="NewsEvents" class="py-5">
         <div class="container">
             <h2 class="text-center mb-5">N E W S A N D E V E N T S</h2>
-            <div class="row g-4">
+            <div class="row gy-4">
 
                 <!-- For full width, use: <div class="col-12"> -->
                 <!-- For 3 on a row, use: <div class="col-12 col-md-6 col-lg-4"> -->
@@ -134,7 +134,7 @@
                 
                 <!-- -----------------------------------------------------2025---------------------------------------------- -->
 
-                <div class="col-12">
+                <div class="col-12 col-md-6 col-lg-6">
                     <a href="#" class="news-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/feed/ModMed.jpg" data-alt="Modular Meditations Performance">
                     <img src="images/feed/ModMed.jpg" alt="Modular Meditations Performance">
                     <div class="overlay">
@@ -146,7 +146,20 @@
                     </a>
                 </div>
 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-6">
+                    <a href="https://www.mixcloud.com/RadioMagnetic/noisebox-radio-016-apr/" target="_blank" class="news-item">
+                        <img src="images/feed/noisebox.JPG" alt="Studio Journal">
+                        <div class="overlay">
+                            <div class="overlay-text">
+                            <h5>Noisebox -Glasgow</h5>
+                            <p>Apr 18, 2024</p>
+                            <p>LIVE RECORDING</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-6">
                     <a href="#" class="news-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/feed/radiophrenia2025.jpg" data-alt="Radiophrenia 2025">
                     <img src="images/feed/radiophrenia2025.jpg" alt="Radiophrenia 2025">
                     <div class="overlay">
@@ -159,7 +172,7 @@
                 </div>
 
                 
-                <div class="col-12 col-md-6 col-lg-4">
+                <div class="col-12 col-md-6 col-lg-6">
                     <a href="https://matwarren.bandcamp.com/album/cogitare-deambulare" target="_blank" class="news-item">
                         <img src="images/releases/CogitareDeambulare2024.jpg" alt="Cogitare Deambulare">
                         <div class="overlay">
@@ -173,18 +186,7 @@
 
                 <!-- -----------------------------------------------------2024---------------------------------------------- -->
 
-                <div class="col-12 col-md-6 col-lg-4">
-                    <a href="https://www.mixcloud.com/RadioMagnetic/noisebox-radio-016-apr/" target="_blank" class="news-item">
-                        <img src="images/feed/noisebox.JPG" alt="Studio Journal">
-                        <div class="overlay">
-                            <div class="overlay-text">
-                            <h5>Noisebox -Glasgow</h5>
-                            <p>Apr 18, 2024</p>
-                            <p>LIVE RECORDING</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
+
 
                 <!-- 1 full-width item -->
                 <div class="col-12">
@@ -215,16 +217,23 @@
                 </div>
 
                 <div class="col-12 col-md-6 col-lg-6">
-                    <a href="#" class="news-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images//gallery/panto-16.jpg" data-alt="Dublin Modular Panto">
-                        <img src="images//gallery/panto-16.jpg" alt="Dublin Modular Panto Event" class="img-fluid">
+                    <a href="#" class="news-item" 
+                        data-bs-toggle="modal" 
+                        data-bs-target="#imageModal" 
+                        data-img="images//gallery/panto-16.jpg" 
+                        data-alt="Guth An Strutha Event" 
+                        data-credit="https://www.instagram.com/cianc/|Photo by Cian Copland">
+                        <img src="images//gallery/panto-16.jpg" alt="Guth An Strutha Event Image" class="img-fluid">
                         <div class="overlay">
-                        <div class="overlay-text">
-                            <h5>Dublin Modular Panto Event</h5>
-                            <p>Image Courtesy of Cian Copland</p>
-                        </div>
+                            <div class="overlay-text">
+                                <h5>Dublin Modular Panto Event</h5> 
+                                <p>Image Courtesy of Cian Copland</p>                     
+                            </div>
                         </div>
                     </a>
                 </div>
+
+                
 
                 <!-- <div class="col-12">
                     <a href="#" class="news-item" data-bs-toggle="modal" data-bs-target="#imageModal" data-img="images/feed/allRoads.jpg" data-alt="All roads Festival 2023">
@@ -268,7 +277,8 @@
                         <img src="images/gallery/GuthAnStrutha.jpg" alt="Guth An Strutha Event Image" class="img-fluid">
                         <div class="overlay">
                             <div class="overlay-text">
-                                <h5>Guth An Strutha Performance Image</h5>                      
+                                <h5>Guth An Strutha Performance Image</h5>  
+                                <p>Image Courtesy of ScottNoSkills</p>                    
                             </div>
                         </div>
                     </a>
@@ -379,9 +389,16 @@
             <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered modal-lg">
                 <div class="modal-content bg-transparent border-0">
+
                 <div class="modal-body p-0">
                     <img src="" alt="" id="modalImage" class="img-fluid w-100">
                 </div>
+
+                <!-- ✅ Add this part -->
+                <div class="modal-footer justify-content-center">
+                    <p id="imageCredit" class="mb-0 small text-light"></p>
+                </div>
+
                 </div>
             </div>
             </div>
@@ -453,16 +470,53 @@
     <script src="bootstrap/dist/js/bootstrap.min.js"></script>
 
     <!-- Script for modal -->
-    <script>
+    <!-- <script>
         $(document).ready(function() {
         $('.news-item[data-img]').click(function(e) {
-            e.preventDefault(); // <- prevents jumping to top
+            e.preventDefault(); 
             var imgSrc = $(this).data('img');
             var imgAlt = $(this).data('alt');
             $('#modalImage').attr('src', imgSrc).attr('alt', imgAlt);
             $('#imageModal').modal('show');
         });
         });
+    </script> -->
+
+    <script>
+    $(document).ready(function() {
+    $('.news-item[data-img]').click(function(e) {
+        e.preventDefault();
+
+        // Get data attributes
+        var imgSrc = $(this).data('img');
+        var imgAlt = $(this).data('alt');
+        var creditData = $(this).data('credit');
+
+        // Set image
+        $('#modalImage').attr('src', imgSrc).attr('alt', imgAlt);
+
+        // Handle credit text and link
+        if (creditData) {
+        // Format: "url|text"
+        var parts = creditData.split('|');
+        var creditHtml = '';
+
+        if (parts.length === 2) {
+            creditHtml = '<a href="' + parts[0].trim() + '" target="_blank" class="text-light text-decoration-underline">' 
+                        + parts[1].trim() + '</a>';
+        } else {
+            creditHtml = creditData; // fallback if only plain text
+        }
+
+        $('#imageCredit').html(creditHtml).show();
+        } else {
+        $('#imageCredit').hide();
+        }
+
+        // Show modal
+        $('#imageModal').modal('show');
+    });
+    });
     </script>
 
 
