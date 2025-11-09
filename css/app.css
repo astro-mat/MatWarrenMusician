@@ -6947,5 +6947,9 @@ body {
     max-width: 450px;
     /* shrink for mobile */ } }
 /* Desktop and up */
+@media (min-width: 992px) {
+  #showcase-logo {
+    max-width: 400px;
+    /* or whatever looks right */ } }
 
 /*# sourceMappingURL=app.css.map */
