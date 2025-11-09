@@ -6832,7 +6832,9 @@ body {
   /* centers it */ }
 
 #showcase-logo {
-  max-width: 90%;
+  width: 60vw;
+  max-width: 350px;
+  min-width: 180px;
   height: auto;
   display: block;
   margin: 0 auto; }
@@ -6951,5 +6953,11 @@ body {
   #showcase-logo {
     max-width: 400px;
     /* or whatever looks right */ } }
+/* Force smaller logo size */
+#showcase-logo {
+  max-width: 600px !important;
+  height: auto;
+  display: block;
+  margin: 0 auto; }
 
 /*# sourceMappingURL=app.css.map */
